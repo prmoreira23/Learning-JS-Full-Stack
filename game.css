@@ -1,0 +1,30 @@
+table {
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+td {
+	height: 100px;
+	width: 100px;
+	/*border: 2px solid black;*/
+	color: white;
+	font-size: 80px;
+	text-align: center;
+}
+
+td:hover{
+	background: lightgrey;
+}
+
+.vertical {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+
+.horizontal {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Effects</title>
+	<script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script> 
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: teal;
+			float: left;
+			margin: 20px;
+		}	
+	</style>
+</head>
+<body>
+
+	<div>Please don't fade me</div>
+	<div>I'm begging you please!</div>
+	<div>please! please! please!</div>
+	<button>Fade All</button>
+
+	<script type="text/javascript">
+	$("button").click(function(){
+		$("div").fadeOut("slow", function(){
+			console.log("Animation is over");
+		});
+	});
+	</script>
+</body>
+</html>

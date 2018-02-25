@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Events</title>
+	<script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<h1>JQuery events</h1>
+	<button>Don't click me</button>
+	<button>Seriously, don't click me</button>
+	<button>This is your last warning. Don't click me</button>
+
+	<input id="input-text" type="text" placeholder="Type here some text">
+
+	<p id="text-display">test</p>
+
+	<ul>
+	</ul>
+
+	<script type="text/javascript">
+		$("h1").click(function(){
+			alert("H1 clicked");
+		});
+		$("button").click(function(){
+			console.log($(this).text());
+		});
+		$("#input-text").keypress(function(event){
+			if(event.which === 13){
+				var inputText = $("#input-text").val();
+				$("#text-display").text(inputText);
+				$("ul").append("<li>"+inputText+"</li>")
+				$("#input-text").val("");
+			}
+		});
+	</script>
+
+</body>
+</html>

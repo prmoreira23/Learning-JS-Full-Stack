@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Methods</title>
+	<script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+	<h1>jQuery Methods Demo Page</h1>
+
+	<input type="text" placeholder="Your name">
+
+	<ul>
+		<li>Pirulot</li>
+		<li>Skirtle</li>
+		<li>Stardust</li>
+		<li>Twist</li>
+	</ul>
+
+	<select>
+		<option>Ostrich</option>
+		<option>Toad</option>
+		<option>Turtle</option>
+	</select>
+
+	<img src="http://www.telegraph.co.uk/content/dam/science/2016/05/20/pine_marten_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg?imwidth=1400">
+
+	<script type="text/javascript">
+	if(jQuery){
+		$("div").css("background-color", "purple");
+		$(".highlight").css("width", "200px");
+		$("#third").css("border", "1px solid orange");
+		$("div:first-of-type").css("color", "pink");
+	} else {
+		console.log("No JQuery");
+	}
+	</script>
+
+</body>
+</html>
